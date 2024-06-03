@@ -11,11 +11,11 @@
 
 <body>
     <header>
-        <title>Playwright Examples</title>
+        <h1>Playwright Examples</h1>
     </header>
-    <section id="locators">
-        <h1>Locators</h1>
-        <div>
+    <h1>Locators</h1>
+    <section id="locators" class="locators">
+        <div class="grid-cell">
             <h2>Locate by Role</h2>
             <h3>Sign up</h3>
             <label>
@@ -24,41 +24,43 @@
             <br />
             <button>Submit</button>
         </div>
-        <div>
+        <div class="grid-cell">
             <h2>Locate by Label</h2>
             <label>Password <input type="password" /></label>
         </div>
-        <div>
+        <div class="grid-cell">
             <h2>Locate by Placeholder</h2>
             <input type="email" placeholder="name@example.com" />
         </div>
-        <div>
+        <div class="grid-cell">
             <h2>Locate by Text</h2>
             <span>Welcome, John</span>
         </div>
-        <div>
+        <div class="grid-cell">
             <h2>Locate by alt text</h2>
             <img alt="playwright logo" src="https://playwright.dev/img/playwright-logo.svg" width="100" />
         </div>
-        <div>
+        <div class="grid-cell">
             <h2>Locate by title</h2>
             <span title='Issues count'>25 issues</span>
         </div>
-        <div>
+        <div class="grid-cell">
             <h2>Locate by test id</h2>
             <button data-testid="directions">Itinéraire</button>
         </div>
     </section>
-    <section>
-        <h1>Locate in Shaow DOM</h1>
-        <p>
-            All locators in Playwright by default work with elements in Shadow DOM. The exceptions are:
-        </p>
-        <ul>
-            <li>Locating by XPath does not pierce shadow roots.</li>
-            <li>Closed-mode shadow roots are not supported.</li>
-        </ul>
-        <div>
+    <h1>Locate in Shaow DOM</h1>
+    <section class="locators">
+        <div class="grid-header grid-cell">
+            <p>
+                All locators in Playwright by default work with elements in Shadow DOM. The exceptions are:
+            </p>
+            <ul>
+                <li>Locating by XPath does not pierce shadow roots.</li>
+                <li>Closed-mode shadow roots are not supported.</li>
+            </ul>
+        </div>
+        <div class="grid-cell">
             <h2></h2>
             <x-details role=button aria-expanded=true aria-controls=inner-details>
                 <div>Title</div>
@@ -66,7 +68,10 @@
                 <div id=inner-details>Details</div>
             </x-details>
         </div>
-        <div>
+        <div class="grid-cell">
+            <h2></h2>
+        </div>
+        <div class="grid-cell">
             <h2></h2>
         </div>
     </section>
