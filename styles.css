@@ -1,0 +1,68 @@
+/* Center the content on the page */
+body {
+  font-family: arial;
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  height: 100vh;
+  margin: 0 auto;
+  width: 50vw;
+}
+
+header {
+  display: flex;
+  flex-shrink: 0;
+  position: relative;
+  top: 0;
+}
+
+/* Style for headings */
+h1,
+h2,
+h3 {
+  text-align: center;
+  color: #333;
+}
+
+/* Style for forms */
+form {
+  max-width: 25em;
+  width: 100%;
+  padding: 1.25em;
+  border: 0.0625em solid #ccc;
+  border-radius: 0.3125em;
+  background-color: #f9f9f9;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  width: 100%;
+  padding: 0.625em;
+  margin: 0.3125em 0;
+  border: 0.0625em solid #ccc;
+  border-radius: 0.3125em;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 0.625em;
+  margin: 0.625em 0;
+  border: none;
+  border-radius: 0.3125em;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+html {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
